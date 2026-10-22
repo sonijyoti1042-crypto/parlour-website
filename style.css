@@ -66,7 +66,7 @@ img {
 /* HERO */
 .hero {
   min-height: 620px;
-  background-image: linear-gradient(to right, rgba(250, 246, 245, 0.96), rgba(250, 246, 245, 0.78), rgba(250, 246, 245, 0.2)), url("images/hero-background-img.jpg");
+  background-image: linear-gradient(to right, rgba(250, 246, 245, 0.96), rgba(250, 246, 245, 0.78), rgba(250, 246, 245, 0.2)), url("./images/hero-background-img.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
