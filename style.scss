@@ -1,0 +1,514 @@
+$primary: #e77785;
+$primary-dark: #cf6271;
+$text-dark: #2f2526;
+$text-muted: #6c757d;
+$light-bg: #faf4f4;
+$white: #ffffff;
+$radius: 16px;
+$shadow: 0 6px 24px rgba(47, 37, 38, 0.09);
+
+/* COMMON */
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+color: $text-dark;
+overflow-x: hidden;
+}
+
+img {
+max-width: 100%;
+display: block;
+}
+
+/* HEADER */
+
+.navbar-brand {
+color: $text-dark;
+font-size: 22px;
+font-weight: bold;
+
+&:hover {
+    color: $text-dark;
+}
+
+img {
+    width: 58px;
+    height: 58px;
+    object-fit: contain;
+}
+}
+
+.nav-link {
+color: $text-dark;
+font-weight: bold;
+transition: color 0.3s ease;
+
+&:hover {
+    color: $primary;
+}
+}
+
+/* BUTTONS */
+
+.btn-pink {
+background-color: $primary;
+color: $white;
+border: 1px solid $primary;
+transition: all 0.3s ease;
+
+&:hover {
+    background-color: $primary-dark;
+    border-color: $primary-dark;
+    color: $white;
+}
+}
+
+.btn-outline-pink {
+color: $primary;
+border: 1px solid $primary;
+transition: all 0.3s ease;
+
+&:hover {
+    background-color: $primary;
+    color: $white;
+}
+}
+
+/* HERO */
+
+.hero {
+min-height: 620px;
+background-image:
+    linear-gradient(
+        to right,
+        rgba(250, 246, 245, 0.96),
+        rgba(250, 246, 245, 0.78),
+        rgba(250, 246, 245, 0.20)
+    ),
+    url("/images/hero-background-img.jpg");
+background-size: cover;
+background-position: center;
+display: flex;
+align-items: center;
+}
+
+.hero-content {
+max-width: 720px;
+}
+
+.lady-logo {
+width: auto;
+height: 90px;
+}
+
+.hero {
+h1 {
+    color: $text-dark;
+    line-height: 1.15;
+
+    span {
+        color: $primary;
+    }
+}
+
+.lead {
+    max-width: 650px;
+}
+}
+
+/* HEADINGS */
+
+.eyebrow {
+margin-bottom: 8px;
+color: $primary;
+font-size: 13px;
+font-weight: bold;
+letter-spacing: 1px;
+text-transform: uppercase;
+}
+
+.section-title {
+margin-bottom: 18px;
+color: $primary;
+font-size: 42px;
+font-weight: bold;
+}
+
+/* ABOUT */
+
+.about-section {
+background-color: $white;
+}
+
+.mini-card {
+height: 100%;
+padding: 20px;
+background-color: $white;
+border-radius: $radius;
+box-shadow: $shadow;
+transition: transform 0.3s ease;
+
+&:hover {
+    transform: translateY(-5px);
+}
+
+img {
+    width: 78px;
+    height: 78px;
+    margin-bottom: 16px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+h3 {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+p {
+    margin-bottom: 0;
+    color: $text-muted;
+}
+}
+
+/* BENEFITS */
+
+.benefits {
+background-color: $light-bg;
+}
+
+.benefit {
+height: 100%;
+padding: 32px 24px;
+background-color: $white;
+border-radius: $radius;
+box-shadow: $shadow;
+transition: transform 0.3s ease;
+
+&:hover {
+    transform: translateY(-5px);
+}
+
+i {
+    margin-bottom: 16px;
+    color: $primary;
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+p {
+    margin-bottom: 0;
+    color: $text-muted;
+}
+}
+
+/* SERVICES */
+
+.services-section {
+background-color: $white;
+}
+
+.service-card {
+height: 100%;
+overflow: hidden;
+background-color: $white;
+border-radius: $radius;
+box-shadow: $shadow;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+&:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(47, 37, 38, 0.14);
+}
+
+img {
+    width: 100%;
+    height: 185px;
+    object-fit: cover;
+}
+
+h3 {
+    margin: 0;
+    padding: 16px;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+}
+}
+
+/* CONTACT */
+
+.contact-section {
+background-image:
+linear-gradient(
+rgba(47, 37, 38, 0.67),
+rgba(47, 37, 38, 0.67)
+),
+url("http://www.rashmipearlbeautysalonacademy.in/images/bg-hero.jpg");
+background-size: cover;
+background-position: center;
+}
+
+.appointment-form {
+background-color: $white;
+border-radius: $radius;
+
+.form-icon {
+    margin-bottom: 16px;
+    color: $primary;
+    font-size: 40px;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-control {
+    &:focus {
+        border-color: $primary;
+        box-shadow: 0 0 0 0.2rem rgba(231, 119, 133, 0.15);
+    }
+}
+}
+
+.form-message {
+font-size: 14px;
+font-weight: bold;
+}
+
+/* GALLERY */
+
+.gallery {
+
+img {
+    width: 100%;
+    height: 210px;
+    border-radius: 12px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.02);
+    }
+}
+}
+
+/* ATTRACTIVE FOOTER */
+
+.footer {
+background-color: $text-dark;
+color: rgba(255, 255, 255, 0.8);
+
+h2 {
+    color: $white;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+h3 {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 24px;
+    color: $white;
+    font-size: 20px;
+    font-weight: bold;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+        width: 35px;
+        height: 2px;
+        background-color: $primary;
+    }
+}
+
+p {
+    line-height: 1.7;
+}
+}
+
+/* About */
+
+.footer-tagline {
+color: $primary;
+font-weight: bold;
+margin-bottom: 12px;
+}
+
+/* Social icons */
+
+.footer-social {
+display: flex;
+gap: 10px;
+margin-top: 20px;
+
+a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 50%;
+    color: $white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: $primary;
+        border-color: $primary;
+        transform: translateY(-3px);
+    }
+}
+}
+
+/* Quick Links */
+
+.footer-links {
+display: flex;
+flex-direction: column;
+
+a {
+    width: fit-content;
+    margin-bottom: 12px;
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+    transition: all 0.3s ease;
+
+    &:hover {
+        color: $primary;
+        padding-left: 5px;
+    }
+}
+}
+
+/* Contact */
+
+.footer-contact {
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 15px;
+
+    i {
+        min-width: 20px;
+        margin-top: 5px;
+
+        color: $primary;
+        font-size: 17px;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    strong {
+        color: $white;
+    }
+
+    a {
+        color: rgba(255, 255, 255, 0.8);
+        text-decoration: none;
+
+        &:hover {
+            color: $primary;
+        }
+    }
+}
+}
+
+/* WhatsApp button */
+
+.whatsapp-btn {
+display: inline-flex;
+align-items: center;
+gap: 10px;
+margin-top: 10px;
+padding: 11px 18px;
+background-color: #25d366;
+color: $white;
+border-radius: 30px;
+font-weight: bold;
+text-decoration: none;
+transition: all 0.3s ease;
+
+&:hover {
+    background-color: #1ebe5d;
+    color: $white;
+    transform: translateY(-2px);
+}
+
+i {
+    font-size: 20px;
+}
+}
+
+/* Bottom */
+
+.footer-bottom {
+padding: 18px 0;
+border-top: 1px solid rgba(255, 255, 255, 0.12);
+
+p {
+    margin: 0;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+}
+}
+
+/* Mobile Footer */
+
+@media screen and (max-width: 767px) {
+
+.footer {
+    text-align: center;
+
+    h3::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.footer-social {
+    justify-content: center;
+}
+
+.footer-links {
+    align-items: center;
+}
+
+.footer-contact {
+
+    .contact-item {
+        justify-content: center;
+        text-align: left;
+    }
+}
+
+.footer-bottom {
+    text-align: center;
+
+    .text-md-end {
+        text-align: center !important;
+        margin-top: 5px;
+    }
+}
+
+.whatsapp-btn {
+    margin-top: 15px;
+}
+}
+
